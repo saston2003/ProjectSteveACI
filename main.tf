@@ -15,6 +15,7 @@ variable "imageversion" {
 
 variable "dockerhub-username" {
   description = "DockerHub username"
+  default = "saston2003"
 }
 
 
