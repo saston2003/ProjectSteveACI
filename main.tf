@@ -28,7 +28,7 @@ resource "azurerm_container_group" "aci-myapp" {
   
   container {
     name   = "myappdemo"
-    image  = "docker.io/${var.dockerhub-username}/demobook:${var.imageversion}"
+    image  = "docker.io/${var.dockerhub-username}/mydemobook:${var.imageversion}"
     cpu    = "0.5"
     memory = "1.5"
 
