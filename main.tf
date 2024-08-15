@@ -21,7 +21,7 @@ variable "dockerhub-username" {
 resource "azurerm_container_group" "aci-myapp" {
   name                = "aci-app"
   location            = "North Europe"
-  resource_group_name = azurerm_resource_group.mycidemobook.name
+  resource_group_name = azurerm_resource_group.myacidemobook.name
   ip_address_type     = "public"
   dns_name_label      = "myapp-demo"
   os_type             = "linux"
