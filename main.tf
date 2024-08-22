@@ -29,7 +29,7 @@ resource "azurerm_container_group" "aci-myapp" {
   
   container {
     name   = "myappdemo"
-    image  = "docker.io/${var.dockerhub-username}/mydemobook:${var.imageversion}"
+    image  = "saston2003/mydemobook:v1"
     cpu    = "0.5"
     memory = "1.5"
 
@@ -39,3 +39,4 @@ resource "azurerm_container_group" "aci-myapp" {
     }
   }
 }
+// image  = "docker.io/${var.dockerhub-username}/mydemobook:${var.imageversion}"
