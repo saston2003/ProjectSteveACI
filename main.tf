@@ -29,7 +29,7 @@ resource "azurerm_container_group" "aci-myapp" {
   
   container {
     name   = "myappdemo"
-    image  = "index.docker.io/saston2003/mydemobook:v1"
+    image  = "mcr.microsoft.com/azuredocs/aci-helloworld"
     cpu    = "0.5"
     memory = "1.5"
 
